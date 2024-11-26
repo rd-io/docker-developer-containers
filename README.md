@@ -199,32 +199,13 @@ with the command:
 ```bash
 pnpm tsx ./file.ts
 ```
+<br>
 
+---
+### Everything
+As the name says, if you really want to, you can have all language environments
+added to a single container. Everything is here in one place.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+When attaching to `everything`, each language will have its own separate folder
+from where the working directory starts. Rust will initiate a project in its
+own folder, as well as TypeScript.
