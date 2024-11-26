@@ -152,7 +152,7 @@ Lua are developed.
 ---
 ### Python
 The simplest of the builds, the latest version of Python3 is downloaded directly
-from the DNF repository. No versioning needs to be kept track of.
+from the DNF package manager. No versioning needs to be kept track of.
 
 <br>
 
