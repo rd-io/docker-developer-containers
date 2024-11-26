@@ -111,7 +111,7 @@ rust container will not work. One of the two rust images must be removed.*
 <br>
 
 ## Language Environments
----
+
 ### C
 The standard gcc compiler is here for your introduction to the C language. The
 compiler is installed from the DNF package manager.
