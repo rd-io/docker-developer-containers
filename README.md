@@ -95,7 +95,7 @@ writing and saving:
 docker build ./c
 ```
 
-This will build the docker container for the C language and environment. After
+This will build the docker container for the C environment. After
 the image is built, it can then be started with the command:
 ```bash
 ./c/start-c.sh
