@@ -81,9 +81,9 @@ For instructions on how to install Docker, see [Install Docker Engine](https://d
 
 After Docker Engine is installed:
 ```bash
-git clone https://github.com/rd-io/dotfiles.git
+git clone https://github.com/rd-io/docker-runtime-containers.git
 
-cd dotfiles
+cd docker-runtime-containers
 
 docker build ./c
 ```
