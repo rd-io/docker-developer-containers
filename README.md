@@ -84,7 +84,14 @@ After Docker Engine is installed:
 git clone https://github.com/rd-io/docker-runtime-containers.git
 
 cd docker-runtime-containers
-
+```
+Using C an an example, open a text editor in the `./c/Dockerfile`:
+```bash
+nvim ./c/Dockerfile
+```
+Then edit the four empty string variables with your information. Then, after
+writing and saving:
+```bash
 docker build ./c
 ```
 
