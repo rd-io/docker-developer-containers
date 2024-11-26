@@ -134,6 +134,8 @@ The specific version of Java installed is an OpenJDK, Adoptium Temurin. This
 version of Java is installed by adding the Adoptium repository to DNF and
 installing through the package manager.
 
+For more information about Temurin, click [here](https://adoptium.net/docs/faq/)
+
 The variable `OPENJDK_LTS` will need periodic updates as newer LTS versions
 of OpenJDK are released.
 
