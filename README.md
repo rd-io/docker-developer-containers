@@ -85,7 +85,7 @@ git clone https://github.com/rd-io/docker-runtime-containers.git
 
 cd docker-runtime-containers
 ```
-Using C an an example, open a text editor in the `./c/Dockerfile`:
+Using C as the example, open a text editor to the C environment's Dockerfile:
 ```bash
 nvim ./c/Dockerfile
 ```
