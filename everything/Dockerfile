@@ -41,7 +41,7 @@ RUN dnf upgrade -y && dnf install -y \
 RUN useradd -m -d /home/$USERNAME $USERNAME
 RUN mkdir -m 0755 /home/$USERNAME/.ssh
 
-# Creating all runtime folders
+# Creating all language folders
 RUN mkdir /home/$USERNAME/$LANGUAGE
 RUN mkdir /home/$USERNAME/$LANGUAGE/c
 RUN mkdir /home/$USERNAME/$LANGUAGE/go
@@ -59,7 +59,7 @@ RUN rm /opt/nvim-linux64.tar.gz
 
 ENV PATH="$PATH:/opt/nvim-linux64/bin"
 
-# Addint dotfile Neovim configuration
+# Adding dotfile Neovim configuration
 RUN mkdir -p /home/$USERNAME/.config/
 ADD https://github.com/$GITHUB_USERNAME/$DOTFILE_REPO.git /home/$USERNAME/.config/
 
@@ -100,10 +100,10 @@ RUN dnf remove make -y && dnf autoremove -y
 # Non-admin home permissions setup
 RUN chown -R $USERNAME:$USERNAME /home/$USERNAME/
 
-# Changing user, installing remaining environments
 USER $USERNAME
 
-# Rust initializing
+
+# Adding Rust
 RUN cat /home/$USERNAME/sh.rustup.rs | sh -s -- -y && \
     . /home/$USERNAME/.cargo/env && \
     rm /home/$USERNAME/sh.rustup.rs
@@ -111,7 +111,7 @@ RUN cat /home/$USERNAME/sh.rustup.rs | sh -s -- -y && \
 WORKDIR /home/$USERNAME/$LANGUAGE/rust
 RUN . /home/$USERNAME/.cargo/env && cargo init
 
-#PNPM Setup
+# PNPM Setup
 WORKDIR /home/$USERNAME/$LANGUAGE/typescript
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh | bash \
   && curl -fsSL https://get.pnpm.io/install.sh | sh - \
