@@ -1,16 +1,16 @@
-# Docker Runtime Containers
+# Docker Devloper Containers
 
 This project is intended to provide small containers that can be used to learn
  the basics of different languages.
 
 Websites have been decreasing the number of virtual systems that you can use
- to run a simple runtime environment. This project can be used to run
+ to run a simple devloper environment. This project can be used to run
   many different languages in small containers with minimal packages.
 
 This project contains Dockerfiles, and executable scripts, to get different
- containerized runtime environments securely setup and securely running.
+ containerized devloper environments securely setup and securely running.
 
-All runtime environments are built on top of the Fedora Docker container.
+All devloper environments are built on top of the Fedora Docker container.
 
 This is also an opinionated project. The expectation of the build files is that
 you are using Neovim as your editor, that you have your Neovim configuration
@@ -72,7 +72,7 @@ user attaches to a container, that they are using a user account that does not
 have the ability to run commands as root, or super user. This means that `sudo`
 commands will not work in the tty.
 
-All material needed to have a basic runtime environment is provided in the
+All material needed to have a basic devloper environment is provided in the
 container itself. So that the user does not need to edit any other files.
 
 ## How to Start a Container
@@ -81,9 +81,9 @@ For instructions on how to install Docker, see [Install Docker Engine](https://d
 
 After Docker Engine is installed:
 ```bash
-git clone https://github.com/rd-io/docker-runtime-containers.git
+git clone https://github.com/rd-io/docker-devloper-containers.git
 
-cd docker-runtime-containers
+cd docker-devloper-containers
 ```
 Using C as the example, open a text editor to the C environment's Dockerfile:
 ```bash
@@ -104,7 +104,7 @@ the image is built, it can then be started with the command:
 Each language folder has its own `start` shell script that will find and attach
 to a single container.
 
-*If a single runtime environment has multiple images built, for example by
+*If a single devloper environment has multiple images built, for example by
 running a build command on the `rust` folder twice, then the script to start a
 rust container will not work. One of the two rust images must be removed.*
 
