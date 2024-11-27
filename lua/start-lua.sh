@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-lua"
-USERNAME="rd-container"
+USERNAME="lua-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 

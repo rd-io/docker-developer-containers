@@ -1,12 +1,12 @@
 FROM fedora:latest
 
 # User editable variables
-ENV USERNAME=""
 ENV GITHUB_EMAIL=""
 ENV GITHUB_USERNAME=""
 ENV DOTFILE_REPO=""
 
 # Periodic updates for the latest OpenJDK version and Fedora version
+ENV USERNAME="java-container"
 ENV OPENJDK_LTS="21"
 ENV FEDORA_VERSION="41"
 

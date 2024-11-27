@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-rust"
-USERNAME="rd-container"
+USERNAME="rust-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 

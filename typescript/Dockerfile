@@ -1,12 +1,12 @@
 FROM fedora:latest
 
 # User editable variabled
-ENV USERNAME=""
 ENV GITHUB_EMAIL=""
 ENV GITHUB_USERNAME=""
 ENV DOTFILE_REPO=""
 
 # Periodic updates for the latest NVM version
+ENV USERNAME="typescript-container"
 ENV NVM_VERSION="v0.40.1"
 
 # Constants, do not change

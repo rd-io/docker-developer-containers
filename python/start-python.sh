@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-python"
-USERNAME="rd-container"
+USERNAME="python-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 

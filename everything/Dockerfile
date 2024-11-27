@@ -1,12 +1,12 @@
 FROM fedora:latest
 
 # User editable variabled
-ENV USERNAME=""
 ENV GITHUB_EMAIL=""
 ENV GITHUB_USERNAME=""
 ENV DOTFILE_REPO=""
 
 # Constants, do not change
+ENV USERNAME="all-container"
 ENV LANGUAGE="everything"
 LABEL identity="rd-all"
 

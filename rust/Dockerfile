@@ -1,12 +1,12 @@
 FROM fedora:latest
 
 # User editable variables
-ENV USERNAME=""
 ENV GITHUB_EMAIL=""
 ENV GITHUB_USERNAME=""
 ENV DOTFILE_REPO=""
 
 # Constants, do not change
+ENV USERNAME="rust-container"
 ENV LANGUAGE="rust"
 LABEL identity="rd-rust"
 

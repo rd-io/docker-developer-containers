@@ -1,7 +1,6 @@
 FROM fedora:latest
 
 # User editable variabled
-ENV USERNAME=""
 ENV GITHUB_EMAIL=""
 ENV GITHUB_USERNAME=""
 ENV DOTFILE_REPO=""
@@ -10,6 +9,7 @@ ENV DOTFILE_REPO=""
 ENV GO_VERSION="1.23.3"
 
 # Constants, do not change
+ENV USERNAME="go-container"
 ENV LANGUAGE="go"
 LABEL identity="rd-go"
 

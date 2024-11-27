@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-c"
-USERNAME="rd-container"
+USERNAME="c-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 

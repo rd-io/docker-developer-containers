@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-go"
-USERNAME="rd-container"
+USERNAME="go-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 

@@ -30,7 +30,7 @@ Naturally, you can change the build files however you wish.
 
 ## Setup, Variable Initialization
 
-Within each folder for these languages is a Dockerfile. The first four variables
+Within each folder for these languages is a Dockerfile. The first three variables
 are the same across each file:
 - USERNAME: The username you want to use in the container.
 - GITHUB_EMAIL: The email address associated with your Github account.
@@ -89,7 +89,7 @@ Using C as the example, open a text editor to the C environment's Dockerfile:
 ```bash
 nvim ./c/Dockerfile
 ```
-Then edit the four empty string variables with your information. Then, after
+Then edit the three empty string variables with your information. Then, after
 writing and saving:
 ```bash
 docker build ./c

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IDENTITY="rd-typescript"
-USERNAME="rd-container"
+USERNAME="typescript-container"
 
 CONTAINER=$(docker images --filter "label=identity=$IDENTITY" -q)
 
