@@ -37,7 +37,6 @@ RUN rm /opt/nvim-linux64.tar.gz
 ENV PATH="$PATH:/opt/nvim-linux64/bin"
 
 
-
 # Environment setup
 RUN mkdir /home/$USERNAME/$LANGUAGE \
     && mkdir -m 0755 /home/$USERNAME/.ssh

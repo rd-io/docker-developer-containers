@@ -15,13 +15,13 @@ LABEL identity="rd-python"
 RUN echo 'fastestmirror=True' >> /etc/dnf/dnf.conf
 
 RUN dnf upgrade -y && dnf install -y \
-  python3 \
-  python3-pip \
   gcc \
   git \
   nano \
   openssh-clients \
   ripgrep \
+  python3 \
+  python3-pip \
   && dnf autoremove -y
 
 
