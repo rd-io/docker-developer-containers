@@ -55,10 +55,6 @@ WORKDIR /
 RUN rm -r /opt/lua*
 
 
-# Build apps cleanup
-RUN dnf remove make -y && dnf autoremove -y
-
-
 # Non-admin home permissions setup
 RUN chown -R $USERNAME:$USERNAME /home/$USERNAME/
 
