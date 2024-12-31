@@ -24,6 +24,9 @@ RUN dnf upgrade -y && dnf install -y \
   python3-pip \
   && dnf autoremove -y
 
+# Upgrade pip, and install depency for venv
+RUN pip install --upgrade pip
+RUN pip install source
 
 # Non-admin account & Neovim setup
 RUN useradd -m -d /home/$USERNAME $USERNAME
